@@ -1,7 +1,32 @@
 .App {
-  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  background-image: url(https://www.shutterstock.com/shutterstock/photos/169841813/display_1500/stock-photo-movie-clapper-and-film-reel-on-a-wooden-background-169841813.jpg);
+}
+#title {
+  color: aliceblue;
+}
+.donnee {
+  display: flex;
+}
+
+#entete {
+  width: 100px;
+  height: 100px;
+  color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  font-size: 45px;
+}
+
+@keyframes example {
+  from {
+    color: black;
+  }
+  to {
+    color: red;
+  }
 }

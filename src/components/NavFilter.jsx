@@ -11,7 +11,9 @@ const NavFilter = ({ search, handleSearch, starrate, handleRating }) => {
         style={{ width: "100%" }}
       >
         <Container fluid>
-          <Navbar.Brand href="#">F.Movies</Navbar.Brand>
+          <Navbar.Brand id="entete" href="#home">
+            F.Movies
+          </Navbar.Brand>
 
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Form className="d-flex">

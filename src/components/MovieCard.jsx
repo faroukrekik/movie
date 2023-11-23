@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
 import StarRating from "./StarRating";
+import { Link } from "react-router-dom";
 
 const MovieCard = ({ el, del }) => {
   return (
@@ -29,9 +30,12 @@ const MovieCard = ({ el, del }) => {
             <StarRating rating={el.rating} />{" "}
           </Card.Text>
 
-          <Button style={{ margin: "15px" }} variant="primary">
-            More details
-          </Button>
+          <Link to={`/films/${el.id}`}>
+            {" "}
+            <Button style={{ margin: "15px" }} variant="primary">
+              More details
+            </Button>
+          </Link>
           <Button
             onClick={() => del(el.id)}
             style={{ margin: "15px" }}
